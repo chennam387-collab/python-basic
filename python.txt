@@ -1,0 +1,71 @@
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        d={}
+        for i in range(len(s)):
+            if s[i] in d:
+                d[s[i]]+=1
+            else:
+                d[s[i]]=1
+        for key,value in d.items():
+            if value==1:
+                return s.index(key)
+        return -1
+    s=input("enter the string : ")
+    print(fristuniqchar(s))    
+
+def reversewords(self, s: str)
+    s=s.split()
+    out=[]
+    for i in range(len(s)):
+        out.append(s.pop())
+    return " ".join(out)
+
+
+def missingNum(arr):
+    n=len(arr)
+    n=n+1
+    total_sum=(n*(n+1))//2
+    sum=0
+    for i in range(len(arr)):
+        sum+=arr[i]
+    return total_sum-sum
+s=input("enter the missingNum :" )
+print(missingNum(s))
+
+
+def majorityelement(self,nums):
+    n=len(nums)
+    d={}
+    for i in range(len(num)):
+        if num[i] in d:
+            d[nums[i]+=1
+        else:
+            d[nums[i]]=1
+    for key,value in d.items():
+        if valuie>n//2:
+            return key
+arr=list(map(int,input().split()))
+print(majorityElements(arr))
+
+
+
+def fib(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return fib(n-1) + fib(n-2)
+n=int(input("enter the number : "))
+print(fib(n))
+
+
+def fibonacciseries(n):
+    a=0
+    b=1
+    for i in range(1,n):
+        print(a,end=" ")
+        c=a+b
+        a=b
+        b=c
+n=int(input())
+fibonacciseries(n)
