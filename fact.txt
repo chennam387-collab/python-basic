@@ -1,0 +1,52 @@
+#Polymorphism
+class MethodOverride1:
+    def display(self):
+        print("method involved from base class")
+class MethodOverride2(MethodOverride1):
+    def display(self):
+        print("Method involved from derived class")
+ob=MethodOverride2()
+ob.display()
+
+
+#fibanocci using function
+def fib(a):
+    a=0
+    b=1 
+    print(a)
+    print(b)
+    for i in range(2,n):
+        c=a+b
+        a=b 
+        b=c 
+        print(c)
+n=int(input())
+fib(n)
+
+#recursion using fibanocci
+def fib(n):
+    if n==0 or n==1:
+        return n
+    return fib(n-1)+fib(n-2)
+n=int(input())
+print(fib(n))
+
+
+#factorial using function
+def fact(n):
+    f=1
+    for i in range(1,n+1):
+      f*=i
+    print(f)
+fact(5)
+
+
+#linear search
+def linear_search(arr,target):
+    for i in range(len(arr)):
+        if arr[i]==target:
+          return i 
+    return -1 
+arr=list(map(int,input().split(",")))
+target=int(input())
+print(linear_search(arr,target))
